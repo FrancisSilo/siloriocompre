@@ -100,6 +100,43 @@
             to { opacity: 1; transform: translateX(0); }
         }
 
+
+        .certification-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .certificate-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .certificate-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .certificate-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .certificate-card:hover {
+            background: #0ff;
+            color: #000;
+            box-shadow: 0 0 20px #0ff;
+            transform: scale(1.05);
+        }
+
+
         
         .testimonial-container {
             display: flex;
@@ -186,6 +223,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -269,6 +307,28 @@
             </div>
         </div>
     </section>
+
+    <section id="certifications" class="certification-section">
+        <h2>My Certifications</h2>
+        <div class="certificate-container">
+            <div class="certificate-card">
+                <img src="./assets/1.png" alt="Certification 1">
+                <h3>Bash Completion</h3>
+                <p>Certified in Linux command line navigation, scripting, and automation.</p>
+            </div>
+            <div class="certificate-card">
+                <img src="./assets/2.png" alt="Certification 2">
+                <h3>Responsive Web Design</h3>
+                <p>Certified in building responsive web layouts and styling techniques.</p>
+            </div>
+            <div class="certificate-card">
+                <img src="./assets/3.png" alt="Certification 3">
+                <h3>JavaScript Developer</h3>
+                <p>Proficient in JavaScript frameworks and modern development practices.</p>
+            </div>
+        </div>
+    </section>
+    
     
     <section id="pricing" class="pricing">
         <h2>Pricing Plans</h2>
